@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'"> -->
+    <link rel="icon" href="./public/favicon.png" />
+    <link href="./public//stylesheets/style.css" rel="stylesheet">
+    <!-- <style>
+      body{
+        background: red;
+      }
+    </style> -->
+    <title>Hello World!</title>
+  </head>
+  <body>
+    <h1>Welcome to express with electron!</h1>
+    <div>
+      <p> <span>作者:</span> <span id="name"></span> </p>
+      <p> <span>年龄:</span> <span id="age"></span> </p>
+      <p> <span>网站:</span> <span id="website"></span> </p>
+    </div>
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+  </body>
+</html>
+
+
+

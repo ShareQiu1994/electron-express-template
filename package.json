@@ -1,0 +1,55 @@
+{
+  "name": "electron-express-template",
+  "version": "1.0.0",
+  "description": "A minimal electron-express-template application",
+  "main": "electron/main.js",
+  "scripts": {
+    "start": "nodemon --watch electron/**/* --exec electron .",
+    "build": "electron-builder"
+  },
+  "repository": "https://github.com/ShareQiu1994/electron-express-template",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "33.2.0",
+    "electron-builder": "25.1.8",
+    "nodemon": "^3.1.7"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "hbs": "^4.2.0",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1"
+  },
+  "build": {
+    "appId": "com.demo.import-hydropower",
+    "productName": "import-hydropower",
+    "copyright": "Copyright © 2024 <421419567@qq.com>",
+    "mac": {
+      "category": "public.app-category.utilities"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "deleteAppDataOnUninstall": true
+    },
+    "files": [
+      "electron/**/*"
+    ],
+    "directories": {
+      "buildResources": "public",
+      "output": "dist_electron"
+    }
+  }
+}
